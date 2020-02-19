@@ -1,0 +1,21 @@
+from flask import Flask
+from flask import render_template
+
+app = Flask(__name__)
+
+
+# @app.route('/')
+# def hello_world():
+#     return 'Hello World!'
+
+
+@app.route("/")
+def home_page():
+    return render_template('base.html',thing_to_say='hello')
+
+@app.route("/test")
+def new_page():
+    return 'This is another page'
+
+if __name__ == '__main__':
+    app.run()
