@@ -4,12 +4,45 @@
     <meta name="viewport"
           content="widt, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <link href="/static/css/style.css" rel="stylesheet">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
     <title>Document</title>
 </head>
-<body>
-    <h1>Header1</h1>
-    <p>This is a paragraph</p>
-    <h2>Anohter smaller header</h2>
-    <a href="https://www.google.ie">This is a link to google</a>
+<body class="text-center">
+<form class="form-signin container" action="">
+    <img src="/static/images/Bank-of-Ireland-2-696x696.jpg" alt="" id="logo">
+    <p>Verify API</p>
+    <div class="row">
+        <input type="email" id="inputEmail" class="form-control-sm col-sm" placeholder="Email address" required="">
+        <button class="col-sm">clicky</button>
+    </div>
+
+    <div class="row">
+        <input type="email" id="inputEmail" class="form-control-sm col-sm" placeholder="Phone Number" required="">
+        <button class="col-sm">clicky</button>
+    </div>
+
+    <div class="row">
+        <p class="col-sm"></p>
+        <p class="col-sm">
+        <p class="col-sm"></p></p>
+        <button class="btn btn-md btn-primary btn-block col-sm" type="submit">Click me</button>
+        <p class="col-sm"></p>
+        <p class="col-sm"></p>
+        <p class="col-sm"></p>
+    </div>
+
+
+</form>
 </body>
+
 </html>
