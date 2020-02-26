@@ -18,30 +18,64 @@
     <title>Document</title>
 </head>
 <body class="text-center">
+<img src="/static/images/Bank-of-Ireland-2-696x696.jpg" alt="" id="logo">
 <form class="form-signin container" action="">
-    <img src="/static/images/Bank-of-Ireland-2-696x696.jpg" alt="" id="logo">
-    <p>Verify API</p>
+
+    <p>Verify Phone and Email API</p>
     <div class="row">
-        <input type="email" id="inputEmail" class="form-control-sm col-sm" placeholder="Email address" required="">
-        <button class="col-sm">clicky</button>
+        <p class="col-sm">Phone Verification:</p>
+        <p class="col-sm"></p>
+        <p class="col-sm"></p>
     </div>
 
+    <br/>
+
     <div class="row">
+        <button class="col-sm btn btn-secondary">Click to generate phone number</button>
         <input type="email" id="inputEmail" class="form-control-sm col-sm" placeholder="Phone Number" required="">
-        <button class="col-sm">clicky</button>
+        <button class="col-sm btn btn-secondary" type="submit">Copy</button>
+    </div>
+    <br/>
+    <div class="row">
+        <p class="col-sm">Phone Verification is:</p>
+        <input type="select" id="phoneNumbers" class="form-control-sm col-sm" placeholder="Phone Code" required="">
+        <button class="col-sm btn btn-secondary" type="submit">Copy</button>
     </div>
 
     <div class="row">
         <p class="col-sm"></p>
         <p class="col-sm"></p>
         <p class="col-sm"></p></p>
-        <button class="btn btn-md btn-primary btn-block col-sm" type="submit">Click me</button>
+        <p id="results">text</p>
+        {#        <button class="btn btn-md btn-primary btn-block col-sm" type="submit">Click me</button>#}
         <p class="col-sm"></p>
         <p class="col-sm"></p>
         <p class="col-sm"></p>
     </div>
 
 
+</form>
+
+<form class="form-signin container" action="">
+    <div class="row">
+        <p class="col-sm">Phone Verification:</p>
+        <p class="col-sm"></p>
+        <p class="col-sm"></p>
+    </div>
+
+    <br/>
+
+    <div class="row">
+        <button class="col-sm btn btn-secondary">Create new email address</button>
+        <input type="email" id="inputEmail" class="form-control-sm col-sm" placeholder="Email address" required="">
+        <button class="btn btn-secondary col-sm" type="submit">Copy</button>
+    </div>
+    <br/>
+    <div class="row">
+        <button class="btn btn-secondary col-sm">Retrieve email code</button>
+        <input type="email" id="inputEmail" class="form-control-sm col-sm" placeholder="Email code" required="">
+        <button class="btn btn-secondary col-sm" type="submit">Copy</button>
+    </div>
 </form>
 </body>
 
